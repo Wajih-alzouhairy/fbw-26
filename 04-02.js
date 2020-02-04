@@ -199,22 +199,24 @@ console.log(getProperties(person));
 // }
 // console.log(arraySplitting(" it was not easy  "));
 
-function countOccurrences(str) {
+function countLetters(str) {
   let arr = str.split("");
   let result = {};
-}
-function countOccurrences(str, letter) {
-  let counter = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === letter) {
-      counter++;
-    }
-  }
-  return counter;
-}
 
-for (let i = 0; i < arr.length; i++) {
-  let countChar = arr[i];
-  result[currentChar] = countOccurrences(str, currentChar);
+  function countOccurrences(str, letter) {
+    let counter = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === letter) {
+        counter++;
+      }
+    }
+    return counter;
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    let x = arr[i];
+    result[x] = countOccurrences(str, x);
+  }
+  return result;
 }
-console.log(countLetters("bdslijkewnrehifojpowekrf"));
+console.log(countLetters("wtfzxfubiewuohfiznr7gxheuhudfhfezzufe"));
