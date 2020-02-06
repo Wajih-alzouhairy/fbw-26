@@ -75,3 +75,5 @@ function zodiac(name, day, month, year) {
   return result.yourZodiac();
 }
 zodiac("Hadi", "01", "09", "1989");
+
+// End
