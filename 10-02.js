@@ -98,11 +98,11 @@ console.log(superNewObj);
 console.log(console);
 console.table(newObject);
 /* Check if a number is within a given range. Write a program that checks if a number is within the range of an object's min and max properties. Assume min <= max is always true.
-  Examples:
-  (4, { min: 0, max: 5 }) ➞ true
-  (4, { min: 4, max: 5 }) ➞ true
-  (4, { min: 6, max: 10 }) ➞ false
-  (5, { min: 5, max: 5 }) ➞ true */
+Examples:
+(4, { min: 0, max: 5 }) ➞ true
+(4, { min: 4, max: 5 }) ➞ true
+(4, { min: 6, max: 10 }) ➞ false
+(5, { min: 5, max: 5 }) ➞ true */
 console.log("ex 1");
 let ojbRa = { min: 10, max: 11 };
 
@@ -113,16 +113,16 @@ console.log(fun(4, { min: 0, max: 5 }));
 console.log(fun(4, ojbRa));
 
 /*
-  Scrabble. Write a program that, given an array of scrabble tiles, counts the maximum score that a player can earn from the tiles in their hand. Example:
-   [ { tile: "N", score: 1 },
-     { tile: "K", score: 5 }, 
-     { tile: "Z", score: 10 },
-     { tile: "X", score: 8 }, 
-     { tile: "D", score: 2 }, 
-     { tile: "A", score: 1 },
-     { tile: "E", score: 1 } ]
-  The player's maximum score: 1 + 5 + 10 + 8 + 2 + 1 + 1 = 28 
-  */
+Scrabble. Write a program that, given an array of scrabble tiles, counts the maximum score that a player can earn from the tiles in their hand. Example:
+ [ { tile: "N", score: 1 },
+   { tile: "K", score: 5 }, 
+   { tile: "Z", score: 10 },
+   { tile: "X", score: 8 }, 
+   { tile: "D", score: 2 }, 
+   { tile: "A", score: 1 },
+   { tile: "E", score: 1 } ]
+The player's maximum score: 1 + 5 + 10 + 8 + 2 + 1 + 1 = 28 
+*/
 console.log("ex 2");
 let arrayScore = [
   { tile: "N", score: 1 },
@@ -143,11 +143,11 @@ function score(arr) {
 }
 console.log(score(arrayScore));
 /*
-  checks it an empty object? Write a program that returns true if an object is empty, and false if otherwise.
-  Examples:
-  {} ➞ true
-  {a: 1} ➞ false 
-  */
+checks it an empty object? Write a program that returns true if an object is empty, and false if otherwise.
+Examples:
+{} ➞ true
+{a: 1} ➞ false 
+*/
 console.log("ex 3");
 function isEmpty(obj) {
   return Object.keys(obj).length == 0;
@@ -155,12 +155,12 @@ function isEmpty(obj) {
 console.log(isEmpty({}));
 console.log(isEmpty({ 1: 333 }));
 /*
-  Free Shipping. Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50.
-  Examples:
-  freeShipping({ "Sponge": 3.50, "Soap": 5.99 }) ➞ false 
-  freeShipping({ "Surround Sound Equipment": 499.99 }) ➞ true 
-  freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }) ➞ false 
-  */
+Free Shipping. Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50.
+Examples:
+freeShipping({ "Sponge": 3.50, "Soap": 5.99 }) ➞ false 
+freeShipping({ "Surround Sound Equipment": 499.99 }) ➞ true 
+freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }) ➞ false 
+*/
 console.log("ex 4");
 function freeShipping(obj) {
   let values = Object.values(obj);
@@ -174,9 +174,9 @@ function freeShipping(obj) {
 console.log(freeShipping({ Sponge: 3.5, Soap: 5.99 }));
 console.log(freeShipping({ "Surround Sound Equipment": 499.99 }));
 /*
-  5. Programming Object.
-  const programming = { languages: ["JavaScript", "Python", "Ruby"], isChallenging: true, isRewarding: true, difficulty: 8, jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke" }; 
-  */
+5. Programming Object.
+const programming = { languages: ["JavaScript", "Python", "Ruby"], isChallenging: true, isRewarding: true, difficulty: 8, jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke" }; 
+*/
 console.log("ex 5");
 const programming = {
   languages: ["JavaScript", "Python", "Ruby"],

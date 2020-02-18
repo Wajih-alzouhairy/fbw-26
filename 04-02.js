@@ -1,222 +1,172 @@
+let arr = [];
+
+// Objects
+// keys, properties : value
+//Object Literal
 const o = {
-  1: "Wajih",
-  2: "ali",
+  1: "Hadi",
+  2: "Ali",
   3: "Olga"
 };
-
 const obj = {
   name: "Nancy",
   lastName: "saaaa",
   age: 44,
-  add: "xxxstr"
+  add: "xxx str"
 };
+// old school
 let aliName = "Ali";
-let aliAdd = "xxxstr";
+let aliAdd = "xxx str";
 let aliAge = 22;
 let aliLastName = "something";
-
+// const <namespace> = { <key 1>: <value 1>, <key 2>: <value 2>, ... }
 const object = {
   color: "Red",
   size: "big",
   year: 1990,
   arr: [1, 3, 4, 5, 67]
 };
-
+// Accessing properties with (bracket notation)
 const car = {};
 console.log(car);
-car["name"] = "Frod";
+car["name"] = "Ford";
 console.log(car);
 car["year"] = 2020;
 console.log(car);
 
+// Accessing properties with (dot notation)
 car.age = 22;
 console.log(car);
 car.age = 44;
+car.fa = "hhh";
 console.log(car.name);
 console.log(car["name"]);
-
 const save = new Object();
 const arr1 = new Array();
 console.log(save);
 console.log(car.name);
 console.log(car);
-
+// cool for 😎
 for (let prop in car) {
-  console.log(`car.${prop} : ${car[prop]}`);
+  console.log(`car.${prop} : ${car[prop]} `);
 }
-
 const person = {
   name: "Zain",
   age: 20,
   birthYear: 2000,
+  gender: "Male",
+  hight: "170",
   print: function() {
-    console.log(`this user ${person.name} his  born in ${person.birthYear}`);
+    console.log(` this user ${person.name} his born in ${person.birthYear} `);
   },
   old: () => {
     return 2020 - person.birthYear;
   }
 };
+
+// Object.keys
 console.log(Object.keys(person));
+// Object.values
 console.log(Object.values(person));
 
+// Object.entries()
 for (let [key, value] of Object.entries(person)) {
-  console.log(`${key} : ${value}`);
+  console.log(`${key} : ${value} `);
 }
-
+// Methods
 person.print();
 console.log(person.old());
-
 // Object Person. Create an object named person. Loop through the object and print both the property and value of the object.
-const person1 = {
-  name: "Wajih",
-  age: 26,
-  birthYear: 1993,
-  print: function() {
-    console.log(`i am ${person1.name} i born in ${person1.birthYear}`);
-  }
-};
-
-for (let prop in person1) {
-  console.log(`person1.${prop} : ${person1[prop]}`);
+for (let prop in person) {
+  console.log(`person.${prop} : ${person[prop]} `);
 }
 
-const obj1 = { 1: 2, 2: 300 };
-const obj2 = { 1: 4, 3: 3224 };
-const obj3 = { 1: 6, 4: 6423 };
-const totalObj = Object.assign({ name: "Ahmad" }, obj1, obj2, obj3);
+// Object.assign
+const obj1 = { 1: 2, 2: 300 }; // kid
+const obj2 = { 1: 4, 3: 3224 }; // parents
+const totalObj = Object.assign({ name: "Nancy" }, obj1, obj2); // family
 console.log(totalObj);
-
-// Get Values. Create a function that returns an array of all values of an object’s properties.
-// getObjectValues({
-//   choice1: "tea",
-//   choice2: "coffee",
-//   choice3: "milk"
-// })
-// Expected output:
-// ["tea", "coffee", "milk"]
-
-const myChoice = {
-  choice1: "tea",
-  choice2: "coffee",
-  choice3: "milk"
+//Get Values. Create a function that returns an array of all values of an object’s properties.
+const getValues = object => {
+  return Object.values(object);
 };
-
-function choices(num) {
-  return Object.values(num);
-}
-console.log(choices(myChoice));
-
+console.log(getValues(person));
+console.log(getValues(car));
 // Add A Method. Create an object and add a method to that object which prints the values of the objects in a string.
+person.printOut = () => {
+  return ` Hi ${person.name}, you are very short ${person.hight}, and also tooo old ${person.birthYear} `;
+};
+console.log(person.printOut());
 
-// person.printOut = () => {
-//   return `Hi ${person.name} you are very short ${person.hight}, and also too old ${person.birthYear}`;
-// };
-// console.log(person.printOut);
-
+//Object.defineProperty()
 Object.defineProperty(person, "birthDay", {
   value: 20,
-  writable: true
+  writable: false
 });
+person.birthDay = 30;
 console.log(person.birthDay);
-
+//Object.defineProperties()
 Object.defineProperties(person, {
   p1: {
     value: 33,
-    writable: true,
-    p2: {
-      value: {},
-      writable: false
-    },
-    p3: {}
+    writable: true
+  },
+  p2: {
+    value: {},
+    writable: false
+  },
+  p3: {
+    value: "fffff",
+    writable: false
   }
 });
 console.log(person.p3);
 console.log(Object.keys(person));
-
-// List Properties. Create a function that returns an array of properties of a javascript object.
-// Example
-// Expected output:
-// ["name", "class", "course"]
-// let student = {
-//   name: "Mike",
-//   class: "4A",
-//   course: "English"
-// };
-
-// function per(per5) {
-//   return Object.values(per5);
-// }
-// console.log(per(student));
-
-const getProperties = obj => {
-  return Object.getOwnPropertyNames(obj);
-};
-console.log(Object.keys(person));
-console.log(getProperties(person));
-
-// countLetters(“tree”) -> expected output: t: 1, r: 1, e: 2
-
-// function countOccurrences(str, letter) {
-//   let counter = 0;
-//   for (let i = 0; i < str.length; i++) {
-//     if (str[i] === letter) {
-//       counter++;
-//     }
-//   }
-//   return counter;
-// }
-// console.log("countOccurrences");
-// console.log(countOccurrences("this is a string", "i"));
-
-// var arr = ["tree"];
-
-// function counter(x) {
-//   var count = 0,
-//     temp = [];
-//   x = x.split("");
-//   console.log(x);
-//   for (var i = 0, len = x.length; i < len; i++) {
-//     if (x[i] == "a") {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
-// var countLetters = "d";
-// console.log(counter("let hero im a good boy"));
-
-// const countLetters = {
-//   name: "Ali",
-//   class: "coding",
-//   course: "javaScript"
-// };
-// function arraySplitting(text) {
-//   var count = {};
-//   text.split("").forEach(function(i) {
-//     count[i] = count[i] ? count[i] + 1 : 1;
-//   });
-//   return count;
-// }
-// console.log(arraySplitting(" it was not easy  "));
+// Create a function that returns an array of properties of a javascript object.
+function arrSpliting(str) {
+  let arr = str.split("");
+  let countObject = {};
+  function characterCount(word, character) {
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+      if (word[i] === character) {
+        count++;
+      }
+    }
+    return count;
+  }
+  for (let i = 0; i < arr.length; i++) {
+    let currentChar = arr[i];
+    countObject[currentChar] = characterCount(str, currentChar);
+  }
+  return countObject;
+}
+//console.log(arrSpliting("هادي"));
 
 function countLetters(str) {
   let arr = str.split("");
+  console.log(arr + "Chr Array ");
   let result = {};
-
-  function countOccurrences(str, letter) {
+  function countOccurrences(string, letter) {
     let counter = 0;
-    for (let i = 0; i < str.length; i++) {
-      if (str[i] === letter) {
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] === letter) {
+        // ABC == B
         counter++;
       }
     }
     return counter;
   }
-
   for (let i = 0; i < arr.length; i++) {
-    let x = arr[i];
-    result[x] = countOccurrences(str, x);
-  }
+    let currentChar = arr[i]; // B
+    // the magic line 💪🏻
+    result[currentChar] = countOccurrences(str, currentChar); // this is an inner function
+  } // ABC , B
+  // {
+  //  A: 1
+  //  B:
+  // }
+
   return result;
 }
-console.log(countLetters("wtfzxfubiewuohfiznr7gxheuhudfhfezzufe"));
+console.log(countLetters("ABC"));
