@@ -59,3 +59,60 @@ for (let i = 0; i < number1.length; i++) {
   product *= number1[i];
 }
 console.log(`the sum for Array is  ${sum},the product is ${product}`);
+
+//  Hello Frien Create an array filled with your friends’ and family’s names.
+// Loop over the array and greet each friend e.g. Hello Maria! Hello Mike! etc.
+// Bonus: Print the indexes of each item in the array.
+// Expected output example: Mike is at index 1 of my friends array.
+
+let arrayFd = ["Wajih", "Ahmad", "Ali", "Absi", "Moo"];
+for (let i = 0; i < arrayFd.length; i++) {
+  console.log(`Hollo ${arrayFd[i]}`);
+}
+
+// City Names. Create an array of city names.
+//  Loop through the array and add the city names to a string.
+//  Example of expected output: Berlin, Paris, Prague, Rome.
+cityNames2 = ["Aleppo", "Damascus", "Homes", "London"];
+cityNames2str = "";
+for (let i = 0; i < cityNames2.length; i++) {
+  cityNames2str += cityNames2[i];
+  if (i == cityNames2.length - 1) {
+    cityNames2str += "+";
+  } else {
+    cityNames2str += "*";
+  }
+}
+console.log(cityNames2str);
+
+// Odds and Evens. Create a program that changes a given array
+// by adding 1 to each odd integer and subtracting 1 from each even integer.
+// Examples:[3, 5, 2, 4] ➞ expected output: [4, 6, 1, 3]
+// [6, 9, 10, 20] ➞ expected output: [5, 10, 9, 19]
+let num3 = [6, 14, 18, 19, 7];
+let newNum = [];
+let j = 0;
+for (let i = 0; i < num3.length; i++) {
+  j = num3[i];
+  if (j % 2 !== 0) {
+    j++;
+    newNum.push(j);
+  } else {
+    j--;
+    newNum.push(j);
+  }
+}
+console.log(newNum);
+
+// Capitalize. Create a program that capitalises the first letter of each element in an array of names.
+// Examples:
+// [“matt”, “sArA”, “lara”] ➞ [“Matt”, “Sara”, “Lara”]
+// [“samuel”, “MARIA”, “luke”, “mary”] ➞ [“Samuel”, “Maria”, “Luke”, “Mary”]
+// [“Cynthia”, “Karen”, “Jane”, “Carrie”] ➞ [“Cynthia”, “Karen”, “Jane”, “Carrie”]
+
+let namesAraay = ["walid", "wajih", "nyser", "mahmod", "mariem"];
+for (let i = 0; i < namesAraay.length; i++) {
+  namesAraay[i] =
+    namesAraay[i][0].toUpperCase() + namesAraay[i].substring(1).toLowerCase();
+}
+console.log(namesAraay);
