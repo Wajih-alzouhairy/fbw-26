@@ -1,0 +1,14 @@
+body {
+  background-color: pink;
+  color: sienna;
+}
+h1 {
+  color: blue;
+}
+#down {
+  color: chartreuse;
+}
+
+ul {
+  list-style: none;
+}
