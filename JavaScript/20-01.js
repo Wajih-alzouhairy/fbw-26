@@ -151,6 +151,6 @@ console.log(numArr);
 const arrNames = ["sara", "ali", "naNCy"];
 for (let i = 0; i < arrNames.length; i++) {
   arrNames[i] = // i= 0 => sara
-    arrNames[i][0].toUpperCase() + arrNames[i].substr(1).toLowerCase();
+    arrNames[i][0].toUpperCase() + arrNames[i].substring(1).toLowerCase();
 } // s     =>       S                        ara    =>    ara
 console.log(arrNames);

@@ -89,7 +89,3 @@ console.log(result3);
 let variable2 = "the quick brown fox";
 let firstChr3 = variable2[0].toLocaleUpperCase(1);
 console.log(firstChr3);
-let myFrindName = "Anas";
-let ihmAge = 26;
-let result6 = `he is Monky ${myFrindName}, ${ihmAge} years old `;
-console.log(result6);
