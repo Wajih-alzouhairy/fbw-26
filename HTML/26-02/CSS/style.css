@@ -1,0 +1,104 @@
+body {
+  background-image: url(/fbw-26/HTML/26-02/IMAGE/lacasa.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  font-family: "Trade Winds", Arial, Helvetica, sans-serif;
+}
+
+.haski-dog {
+  width: 100px;
+  height: 50px;
+  border: 30px red solid;
+  border-top: 10px black dashed;
+  border-bottom: 10px blue solid;
+  border-color: chartreuse;
+  border-style: double dotted solid dashed; /*dont do that*/
+  border-radius: 50% 20% 30% 100%;
+  margin: 0px;
+  padding: 50px 100px 30px 50px;
+  margin-top: 50px;
+  margin-left: 200px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  /*only two right und left */
+}
+h1,
+h4,
+p,
+div {
+  color: orange;
+}
+h1 {
+  font: size 50px;
+}
+.sq {
+  width: 50px;
+  height: 50px;
+  background-color: crimson;
+  border: 10px black solid;
+}
+.ci {
+  width: 50px;
+  height: 50px;
+  background-color: crimson;
+  border: 10px black solid;
+  border-radius: 50%;
+}
+.sqt {
+  width: 50px;
+  height: 50px;
+  background-color: crimson;
+  border: 10px black solid;
+  border: 20% 100% 20% 20%;
+}
+.da {
+  width: 50px;
+  height: 50px;
+  background-color: crimson;
+  border: 10px black solid;
+  border: 20px black solid;
+  border-right: 100px black solid;
+  border-left: 100px black solid;
+}
+.box {
+  width: 50%;
+  height: 34px;
+  border: 2px black solid;
+}
+div p {
+  color: blue;
+}
+.random-text {
+  letter-spacing: 15px;
+  word-spacing: 10px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-indent: 200px;
+}
+a {
+  text-decoration: none;
+}
+p:last-child {
+  background-color: chocolate;
+}
+p:only-child {
+  background-color: red;
+}
+.move {
+  width: 500px;
+  height: 250px;
+  background-color: salmon;
+  border: 2px yellowgreen dotted;
+}
+.move:hover {
+  width: 800px;
+  height: 800px;
+  box-shadow: 10px 20px 30px black;
+}
+span:only-child {
+  background-color: chartreuse;
+}

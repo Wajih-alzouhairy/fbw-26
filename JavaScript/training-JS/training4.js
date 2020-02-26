@@ -24,11 +24,6 @@ console.log(Array.isArray(numbers));
 console.log(names.includes("Hadi")); // to show that this is there or mot
 console.log(names.indexOf("Ahmad")); // to show the index num
 
-let arr1 = [1, 2, 3];
-let arr2 = [4, 3, 6];
-let arrTotal = arr1.concat(arr2);
-console.log(arrTotal);
-
 let arr3 = [33, 44, 55, 66];
 let arr4 = [11, 22, 77, 88];
 let totalArr = arr3.concat(arr4);
@@ -41,3 +36,11 @@ console.log(result2);
 const intArray = [2, 3, 5, 6, 8];
 let result3 = intArray.map(x => x + 1);
 console.log(result3);
+
+let arr = ["ee", "rr", "tt", "zz"];
+console.log(arr[0].includes("z"));
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 3, 6];
+let arrTotal = arr1.concat(arr2);
+console.log(arrTotal);
