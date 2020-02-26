@@ -1,5 +1,5 @@
 body {
-  background-image: url(/fbw-26/HTML/26-02/IMAGE/lacasa.jpg);
+  background-image: url(/IMAGE/lacasa.jpg);
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -34,35 +34,36 @@ h1 {
   font: size 50px;
 }
 .sq {
-  width: 50px;
-  height: 50px;
-  background-color: crimson;
-  border: 10px black solid;
+  background-color: lightgreen;
+  border: 2px black solid;
 }
-.ci {
-  width: 50px;
-  height: 50px;
-  background-color: crimson;
-  border: 10px black solid;
+.re {
+  background-color: hotpink;
+  border: 2px black solid;
+  height: 70px;
+}
+.cl {
+  margin: 3px;
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border: 2px black solid;
   border-radius: 50%;
 }
-.sqt {
-  width: 50px;
-  height: 50px;
-  background-color: crimson;
-  border: 10px black solid;
-  border: 20% 100% 20% 20%;
+.tra {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 20px solid blue;
 }
-.da {
-  width: 50px;
-  height: 50px;
-  background-color: crimson;
-  border: 10px black solid;
-  border: 20px black solid;
-  border-right: 100px black solid;
-  border-left: 100px black solid;
+
+.sp-cl {
+  /* margin: 0 auto; */
+  background-color: lightgreen;
+  border: 2px black solid;
 }
-.box {
+.test-box {
   width: 50%;
   height: 34px;
   border: 2px black solid;
