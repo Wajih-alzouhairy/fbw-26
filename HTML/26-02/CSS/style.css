@@ -46,7 +46,7 @@ h1 {
   margin: 3px;
   width: 40px;
   height: 40px;
-  background-color: orange;
+  background-color: pink;
   border: 2px black solid;
   border-radius: 50%;
 }
@@ -92,8 +92,8 @@ p:only-child {
 .move {
   width: 500px;
   height: 250px;
-  background-color: salmon;
-  border: 2px yellowgreen dotted;
+  background-color: gray;
+  border: 2px rgb(78, 104, 26) dotted;
 }
 .move:hover {
   width: 800px;
@@ -102,4 +102,8 @@ p:only-child {
 }
 span:only-child {
   background-color: chartreuse;
+}
+.abc {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: brown;
 }

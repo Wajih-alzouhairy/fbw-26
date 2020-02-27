@@ -1,0 +1,62 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration-color: green;
+  background-color: orchid;
+  text-decoration: none;
+  padding: 3px;
+}
+p {
+  font-size: 2rem;
+}
+a:active {
+  color: lightblue;
+}
+a:link {
+  color: pink;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  transition: 3s;
+  background-color: orange;
+  box-shadow: 30px 30px 20px rgba(114, 93, 92, 0.69);
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  border: 2px black solid;
+}
+img:hover {
+  transition: 3s;
+
+  box-shadow: 30px 30px 20px rgba(114, 93, 92, 0.69);
+}
+p {
+  text-align: center;
+}
+div {
+  margin: 10px;
+}
+
+div h1,
+h2 {
+  text-align: center;
+}
+.arabic {
+  text-align: right;
+}
+.englich {
+  text-align: left;
+}
+.german {
+  text-align: left;
+}
