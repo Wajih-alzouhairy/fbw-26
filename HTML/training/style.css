@@ -1,3 +1,175 @@
-ol li {
-  color: red;
+body {
+  background-color: whitesmoke;
+}
+td {
+  border: 2px solid black;
+  font-size: 37px;
+  border-radius: 5px;
+  text-align: center;
+}
+tr:nth-child(1) :first-child {
+  background-color: yellow;
+}
+
+tr:nth-child(2) :first-child {
+  background-color: skyblue;
+}
+tr:nth-child(3) :first-child {
+  background-color: skyblue;
+}
+tr:nth-child(4) :first-child {
+  background-color: skyblue;
+}
+tr:nth-child(4) :first-child {
+  background-color: skyblue;
+}
+tr:nth-child(5) :first-child {
+  background-color: skyblue;
+}
+tr:nth-child(6) :first-child {
+  background-color: skyblue;
+}
+tr:nth-child(7) :first-child {
+  background-color: skyblue;
+}
+tr:nth-child(1) :last-child {
+  background-color: purple;
+}
+tr:nth-child(2) :last-child {
+  background-color: purple;
+}
+tr:nth-child(3) :last-child {
+  background-color: purple;
+}
+tr:nth-child(4) :last-child {
+  background-color: purple;
+}
+tr:nth-child(5) :last-child {
+  background-color: purple;
+}
+tr:nth-child(6) :last-child {
+  background-color: purple;
+}
+tr:nth-child(7) :last-child {
+  background-color: purple;
+}
+tr:nth-child(4n) {
+  background-color: lime;
+}
+tr:nth-child(5n) {
+  background-color: lime;
+}
+tr:nth-child(6n) {
+  background-color: lime;
+}
+tr:nth-child(7n) {
+  background-color: lime;
+}
+tr:nth-child(8n) {
+  background-color: skyblue;
+}
+tr:nth-child(9n) {
+  background-color: blue;
+}
+
+td:nth-child(2),
+td:nth-child(13),
+td:nth-child(14),
+td:nth-child(15),
+td:nth-child(16) {
+  background-color: pink;
+}
+
+td:nth-child(17) {
+  background-color: brown;
+}
+td:nth-of-type(14n),
+td:nth-of-type(15n),
+td:nth-of-type(16n) {
+  background-color: yellow;
+}
+
+tr:nth-child(2) :nth-child(13) {
+  background-color: orange;
+}
+tr:nth-child(3) :nth-child(14) {
+  background-color: orange;
+}
+tr:nth-child(4) :nth-child(15) {
+  background-color: orange;
+}
+tr:nth-child(5) :nth-child(16) {
+  background-color: orange;
+}
+tr:nth-child(8) :nth-child(18) {
+  background-color: white;
+}
+tr:nth-child(9) :nth-child(18) {
+  background-color: white;
+}
+tr:nth-child(8) :nth-child(17) {
+  background-color: white;
+}
+tr:nth-child(9) :nth-child(17) {
+  background-color: white;
+}
+tr:nth-child(9) :nth-child(1) {
+  background-color: white;
+}
+tr:nth-child(8) :nth-child(1) {
+  background-color: white;
+}
+tr:nth-child(1) :nth-child(2) {
+  background-color: white;
+}
+tr:nth-child(1) :nth-child(17) {
+  background-color: white;
+}
+tr:nth-child(1) :nth-child(16) {
+  background-color: white;
+}
+tr:nth-child(1) :nth-child(15) {
+  background-color: white;
+}
+tr:nth-child(1) :nth-child(14) {
+  background-color: white;
+}
+tr:nth-child(1) :nth-child(13) {
+  background-color: white;
+}
+tr:nth-child(6) :nth-child(3) {
+  background-color: skyblue;
+}
+tr:nth-child(7) :nth-child(3) {
+  background-color: blue;
+}
+tr:nth-child(8) :nth-child(2) {
+  background-color: skyblue;
+}
+tr:nth-child(9) :nth-child(2) {
+  background-color: blue;
+}
+tr:nth-child(9) :nth-child(16) {
+  background-color: white;
+}
+tr:nth-child(9) :nth-child(15) {
+  background-color: blue;
+}
+tr:nth-child(8) :nth-child(15) {
+  background-color: skyblue;
+}
+tr:nth-child(9) :nth-child(14) {
+  background-color: blue;
+}
+tr:nth-child(8) :nth-child(14) {
+  background-color: skyblue;
+}
+tr:nth-child(8) :nth-child(13) {
+  background-color: skyblue;
+}
+tr:nth-child(9) :nth-child(13) {
+  background-color: blue;
+}
+tr:nth-child(8) :nth-child(16) {
+  background-color: skyblue;
 }
