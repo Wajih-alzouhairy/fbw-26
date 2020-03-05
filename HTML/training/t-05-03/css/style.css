@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+
+  font-size: 16px;
+}
+body {
+  margin: 0 auto;
+}
+
+.main {
+  background-image: url(../img/giphy.gif);
+  background-size: cover;
+}
+.text {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../img/bird.gif);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center;
+  background-size: 10rem, cover;
+  background-color: transparent;
+}
+.text2 {
+}
