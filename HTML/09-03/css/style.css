@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Permanent Marker", cursive;
+  src: url(../font/Pacifico/Pacifico-Regular.ttf);
+  src: url("https://mdn.mozillademos.org/files/15757/SourceSansPro-Regular.otf")
+    format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  --color-font: blue;
+}
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  color: var(--color-font);
+  direction: rtl;
+  font-variant-numeric: ordinal;
+}
+
+div {
+  font-size: 20px;
+
+  font-language-override: "DAN";
+  font-kerning: none;
+  background-color: orange;
+}
+/*font-size */
+p {
+  font-size: 2em;
+  font-weight: bold;
+  font-variant-caps: small-caps;
+  font-variant-position: super;
+
+  /* font-style: oblique 90deg;*/
+  font-weight: bold;
+  font: italic 2rem;
+  line-height: 4rem;
+
+  text-align: center;
+  /* word-break: keep-all; */
+  text-indent: 3rem;
+  word-spacing: 2rem;
+}
+
+.what {
+  background-color: paleturquoise;
+  font-size: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-shadow: 10px 10px 10px black, 5px 5px 5px yellowgreen;
+}
+
+span {
+  vertical-align: super;
+  font-family: "Source Sans Pro";
+  font-size: 1rem;
+}
