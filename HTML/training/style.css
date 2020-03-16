@@ -4,9 +4,10 @@ body {
 
 td {
   border: 2px solid black;
-  font-size: 37px;
+  font-size: 39px;
   border-radius: 5px;
   text-align: center;
+  height: 70px;
 }
 tr:nth-child(1) :first-child {
   background-color: yellow;
