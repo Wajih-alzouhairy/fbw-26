@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <header>
-        <input type="text" placeholder="search" required />
-      </header>
+<main>
+  <div class="box1">
+    <h1>Hey i am box 1</h1>
+  </div>
+  <div class="box2">
+    <h1>Hey i am box 2</h1>
+  </div>
+  <div class="box3">
+    <h1>Hey i am box 3</h1>
+  </div>
+  <div class="box4">
+    <h1>Hey i am box 4</h1>
+  </div>
+</main>
 
-      <section>
-        <aside></aside>
-        <section></section>
-      </section>
-    </main>
-  </body>
-</html>
+main { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows:
+repeat(5, 5rem); height: 100vh; grid-template-areas: "box1 box1 box1" "box2 box2
+box4 " "box3 box3 box4"; row-gap: 2rem; column-gap: 3rem; } .box1 {
+background-color: blue; grid-area: box1; } .box2 { background-color: blue;
+grid-area: box2; } .box3 { background-color: blue; grid-area: box3; } .box4 {
+background-color: blue; grid-area: box4;
