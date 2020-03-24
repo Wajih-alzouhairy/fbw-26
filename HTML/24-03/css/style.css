@@ -1,0 +1,64 @@
+/* click me Btn */
+/* body {
+  background-color: tomato;
+} */
+body {
+  background-color: skyblue;
+}
+#click {
+  padding: 3rem;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 5%;
+  background-color: lightgray;
+  border: none;
+}
+#click:hover {
+  box-shadow: 0 12px 12px 0 gainsboro;
+  cursor: progress;
+  color: white;
+}
+#click:hover ::after {
+  content: "\00bb";
+}
+#box {
+  background-color: tomato;
+  width: 9rem;
+  height: 9rem;
+}
+
+.cool {
+  background-color: violet;
+  width: 5rem;
+  height: 5rem;
+}
+/* Fancy Menu */
+
+/* Best Design Practices */
+/*  */
+.line-hamburger:after,
+.line-hamburger:before,
+.line-hamburger div {
+  margin: 7px;
+  width: 30px;
+  background-color: white;
+  content: "";
+  display: flex;
+  border-radius: 20%;
+  height: 5px;
+  transition: 0.5s;
+}
+.line-hamburger:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.line-hamburger:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.line-hamburger:hover div {
+  transform: scale(0);
+}
+.test {
+  display: none;
+}
