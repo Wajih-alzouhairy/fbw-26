@@ -44,9 +44,9 @@
     <!--  -->
     <!--  -->
 
-    <span class="line-hamburger" onclick="Show()"></span>
+    <span class="line-hamburger" onclick="show()"></span>
     <div></div>
-    <div class="test">
+    <div id="test">
       <ul>
         <li>dsff</li>
         <li>jhghj</li>
@@ -57,11 +57,11 @@
     </div>
     <script>
       function show() {
-          if(test.style.display=="none")
-          test.style.display ="block";
-      }else{
-        test.style.display !== "none";
-        test.style.display ="show"
+        if (test.style.display == "none") {
+          test.style.display = "block";
+        } else {
+          test.style.display = "none";
+        }
       }
     </script>
   </body>
