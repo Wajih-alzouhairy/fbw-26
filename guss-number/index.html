@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Number Game</title>
+  </head>
+
+  <body>
+    <h1>Guess The Number</h1>
+
+    <p>
+      I have selected a random number between 1 - 10.
+    </p>
+
+    <div class="form">
+      <label for="guessField">try here =>: </label>
+      <input type="text" id="guessField" class="guessField" />
+      <input type="submit" value="guess" class="guessSubmit" id="submitguess" />
+    </div>
+
+    <script type="text/javascript">
+      let y = Math.floor(Math.random() * 10 + 1);
+
+      let guess = 1;
+
+      document.getElementById("submitguess").onclick = function () {
+        let x = document.getElementById("guessField").value;
+
+        if (x == y) {
+          alert(
+            "CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " + guess + " ATTEMPTS "
+          );
+        } else if (x > y) {
+          guess++;
+          alert("OOPS SORRY!! TRY AGAIN");
+        } else {
+          guess++;
+          alert("OOPS SORRY!! TRY AGAIN");
+        }
+      };
+    </script>
+  </body>
+</html>
