@@ -2,7 +2,7 @@
 // Blocking code
 window.setTimeout(() => {
   // alert("Hi");
-}, 10000);
+}, 100000);
 // Non-blocking code
 
 let checkPromise = new Promise((resolve, reject) => {
