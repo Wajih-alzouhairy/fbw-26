@@ -1,5 +1,5 @@
 //const { sum } = require("./script");
-const { prepareString } = require("./script");
+const { capital_letter } = require("./script");
 const { showHelp } = require("./messaging");
 const args = process.argv.slice(2);
 // let x = parseFloat(args[0]);
@@ -9,3 +9,4 @@ const args = process.argv.slice(2);
 if (args.includes("--help")) {
   showHelp();
 }
+capital_letter("hello world");
