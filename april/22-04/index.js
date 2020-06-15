@@ -1,5 +1,5 @@
 document.write("Hey, This is me");
-document.write("<h3> Hadi </h3>");
+document.write("<h3> Wajih </h3>");
 
 const create = () => {
   let newElement = document.createElement("div");
